@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Incorporando Javascript em Páginas HTML</title>
+</head>
+
+<body>
+  <fieldset>
+    <legend>Calculadora </legend>
+      
+      <fieldset>
+        <legend id="Soma">Soma: </legend>
+        <p>Numero 01:  </p><input type="number" id="soma1" name="soma1"><br>
+        <p>Numero 02:  </p><input type="number" id="soma2" name="soma2"><br>
+        <p>O resultado da soma é: </p><p id="ResultadoDaSoma"></p>
+        <button onclick="funcao1()">Somar</button>
+      </fieldset>
+      <br>
+      
+      <fieldset></fieldset>
+      <fieldset></fieldset>
+      <fieldset></fieldset>
+  </fieldset>
+
+
+  <div id="exibe_resultado"> Resultado da Multiplicação: </div>
+
+</body>
+
+<script type="text/javascript">
+
+  var resultadoMultiplicacao = multiplique(10, 50);
+  
+  var divLocal = document.getElementById('exibe_resultado');
+
+  divLocal.innerHTML += resultadoMultiplicacao;
+ 
+  function multiplique(numero1, numero2) {
+  
+    var resultado = 0;
+    
+    resultado = numero1 * numero2;
+   
+    return resultado;
+  }
+
+</script>
+
+<!-- Script de soma -->
+<script>
+  
+function funcao1() {  
+  var number1 = document.getElementById("soma1");
+  var number2 = document.getElementById("soma2");
+  var CalculoSoma = soma(number1,number2)
+  var LocalDoResultadoDaSoma = document.getElementById("ResultadoDaSoma");
+
+  LocalDoResultadoDaSoma.innerHTML += CalculoSoma; 
+
+  function some(number1,number2) {
+    var sresultado = 0;
+    resultado = number1 + number2;
+    return resultado;
+  }
+}
+
+</script>
+
+</html>
