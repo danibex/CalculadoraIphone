@@ -1,30 +1,9 @@
-
-  var resultadoMultiplicacao = multiplique(10, 50);
-  
-  var divLocal = document.getElementById('exibe_resultado');
-
-  divLocal.innerHTML += resultadoMultiplicacao;
- 
-  function multiplique(numero1, numero2) {
-  
-    var resultado = 0;
-    
-    resultado = numero1 * numero2;
-   
-    return resultado;
-  }
-  
-function funcao1() {  
-  var number1 = document.getElementById("soma1");
-  var number2 = document.getElementById("soma2");
-  var CalculoSoma = soma(number1,number2)
-  var LocalDoResultadoDaSoma = document.getElementById("ResultadoDaSoma");
-
-  LocalDoResultadoDaSoma.innerHTML += CalculoSoma; 
-
-  function some(number1,number2) {
-    var sresultado = 0;
-    resultado = number1 + number2;
-    return resultado;
-  }
+function somar() {
+    let tn1 = window.document.getElementById('sn1')
+    let tn2 = window.document.getElementById('sn2')
+    let a = window.document.getElementById('resposta-soma')
+    let n1 = Number(tn1.value)
+    let n2 = Number(tn2.value)
+    s = n1 + n2
+    a.innerHTML += s
 }
