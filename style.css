@@ -8,10 +8,15 @@ div{
     height: 200px;
     border: 3px solid #73AD21;
     margin-left: 1%;
-    margin-top: 50pt;
+    margin-top: 10pt;
+    margin-bottom: 0px;
+    display:inline-table;
+    padding: 10px;
+    
 }
 div#subtracao{
-    margin-top: 50pt;
+    margin-top: 20pt;
+
 }
 button{
     margin-top: 20px;
@@ -21,4 +26,19 @@ button{
 
 input{
     text-align: center;
+}
+
+div#multiplicacao {
+    height: 207px;
+    margin-top: 10px;
+}
+
+div#divisao {
+    margin-left: 17%;
+    margin-top: 0px;
+}
+
+h1#titulo {
+    text-align: center;
+    margin-bottom: 0px;
 }
