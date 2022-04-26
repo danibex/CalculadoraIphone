@@ -7,46 +7,45 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1 id="titulo">CALCULADORA</h1>
-    
-    <div id="soma">
-        <h1>SOMA</h1>
-        <input type="number" name="sn1" id="sn1"> + <input type="number" name="sn2" id="sn2">
-        <button id="soma" onclick="somar()">Somar</button>
-        <p id="resposta-soma">O resultado da soma é: </p>
+    <div id="container">
+        <div id="box">
+            <div id="resultado">50</div>
+            <div id="botoes"> 
+                <div id="linha1">
+                    <input type="button" value="AC" id="acoes" class="AC">
+                    <input type="button" value="+/-" id="acoes" class="+/-">
+                    <input type="button" value="%" id="acoes" class="%">
+                    <input type="button" value=" /  " id="operadores" class="/">
+                </div>
+                <div id="linha2">
+                    <input type="button" value=" 7 " id="numeros" class="7">
+                    <input type="button" value=" 8 " id="numeros" class="8">
+                    <input type="button" value=" 9 " id="numeros" class="9">
+                    <input type="button" value=" X " id="operadores" class="X">
+                </div>
+                <div id="linha3">
+                    <input type="button" value=" 4 " id="numeros" class="4">
+                    <input type="button" value=" 5 " id="numeros" class="5">
+                    <input type="button" value=" 6 " id="numeros" class="6">
+                    <input type="button" value=" -  " id="operadores" class="-">
+                </div>
+                <div id="linha4">
+                    <input type="button" value=" 1 " id="numeros" class="1">
+                    <input type="button" value=" 2 " id="numeros" class="2">
+                    <input type="button" value=" 3 " id="numeros" class="3">
+                    <input type="button" value=" + " id="operadores" class="+">
+                </div>
+                <div id="linha5">
+                    <input type="button" value=" 0 " id="numeros" class="0">
+                    <input type="button" value="    " id="numeros">
+                    <input type="button" value="  , " id="numeros" class=",">
+                    <input type="button" value=" = " id="operadores" class="=">
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div id="subtracao">
-        <h1>SUBTRAÇÃO</h1>
-        <input type="number" name="sub1" id="sub1"> - <input type="number" name="sub2" id="sub2">
-        <button id="subtracao" onclick="subtrair()">Subtrair</button>
-        <p id="resposta-subtracao">O resultado da subtração é: </p>
-    </div>
-    
-    <div id="multiplicacao">
-        <h1>MULTIPLICAÇÃO</h1>
-        <input type="number" name="m1" id="m1"> * <input type="number" name="m2" id="m2">
-        <button id="multiplicacao" onclick="multiplicar()">Multiplicar</button>
-        <p id="resposta-multiplicacao">O resultado da multiplicação é: </p>
-    </div>    
-
-    <div id="divisao">
-        <h1>DIVISÃO</h1>
-        <input type="number" name="m1" id="m1"> * <input type="number" name="m2" id="m2">
-        <button id="multiplicacao" onclick="multiplicar()">Multiplicar</button>
-        <p id="resposta-multiplicacao">O resultado da multiplicação é: </p>
-    </div>
-
-    <div id="potencicao">
-        <h1>POTENCIAÇÃO</h1>
-        <input type="number" name="m1" id="m1"> * <input type="number" name="m2" id="m2">
-        <button id="multiplicacao" onclick="multiplicar()">Multiplicar</button>
-        <p id="resposta-multiplicacao">O resultado da multiplicação é: </p>
-    </div>
-
-    <script type="text/javascript" src="script.js"></script>
-
+    <input type="button" value="BOTÃO TESTE" onclick="calcular()">
+<script src="script.js"></script>
 </body>
 </html>
