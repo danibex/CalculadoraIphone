@@ -10,25 +10,26 @@
 <body>
     <div id="container">
         <div id="box">
+            <p id="atencao">ATENÇÃO: UMA OPERAÇÃO POR VEZ!!!!</p>
             <div id="resultado"></div>
             <div id="botoes"> 
                 <div id="linha1">
                     <input type="button" value="AC" id="acoes" class="AC" onclick="limparTela()">
-                    <input type="button" value="+/-" id="acoes" class="+/-">
-                    <input type="button" value="%" id="acoes" class="%">
-                    <input type="button" value=" /  " id="operadores" class="/">
+                    <input type="button" value="+/-" id="acoes" class="+/-" onclick="alerta()">
+                    <input type="button" value="%" id="acoes" class="%" onclick="alerta()">
+                    <input type="button" value=" /  " id="operadores" class="/" onclick="alerta()">
                 </div>
                 <div id="linha2">
                     <input type="button" value=" 7 " id="numeros" class="7" onclick="botao(7)">
                     <input type="button" value=" 8 " id="numeros" class="8" onclick="botao(8)">
                     <input type="button" value=" 9 " id="numeros" class="9" onclick="botao(9)">
-                    <input type="button" value=" X " id="operadores" class="X">
+                    <input type="button" value=" X " id="operadores" class="X" onclick="alerta()">
                 </div>
                 <div id="linha3">
                     <input type="button" value=" 4 " id="numeros" class="4" onclick="botao(4)">
                     <input type="button" value=" 5 " id="numeros" class="5" onclick="botao(5)">
                     <input type="button" value=" 6 " id="numeros" class="6" onclick="botao(6)">
-                    <input type="button" value=" -  " id="operadores" class="-">
+                    <input type="button" value=" -  " id="operadores" class="-" onclick="subtracao()">
                 </div>
                 <div id="linha4">
                     <input type="button" value=" 1 " id="numeros" class="1" onclick="botao(1)">
@@ -39,13 +40,12 @@
                 <div id="linha5">
                     <input type="button" value=" 0 " id="numeros" class="0" onclick="botao(0)">
                     <input type="button" value="    " id="numeros">
-                    <input type="button" value="  , " id="numeros" class=",">
-                    <input type="button" value=" = " id="operadores" class="=" onclick="resposta()">
+                    <input type="button" value="  , " id="numeros" class="," onclick="alerta()">
+                    <input type="button" value=" = " id="operadores" class="=" onclick="calcular()">
                 </div>
             </div>
         </div>
     </div>
-    <input type="button" value="BOTÃO TESTE" onclick="test()">
 <script src="script.js"></script>
 </body>
 </html>

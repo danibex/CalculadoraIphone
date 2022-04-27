@@ -70,3 +70,9 @@ input {
     background-color: black;
     color: white;
 }
+
+#atencao {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
